@@ -769,10 +769,13 @@
         <h2>What Is Measurely?</h2>
         <div class="section-divider"></div>
         <p>
-            Measurely is a tiny, brilliant room-analysis box that listens to your room, runs a sweep, and unveils the ultimate performance your system is capable of.
-            Measurely is your co-pilot, the friendly voice inside that guides you through the whole process, translating complex data into simple, impactful steps you can immediately take.
+            Measurely is a room acoustics measurement kit that checks what your room is doing to your sound.
+        </p>
+        <p>
+            It confirms what you’ve already got right, and highlights the small adjustments that are actually worth making.
         </p>
     </section>
+
 
     <!-- 3 BENEFITS -->
     <section class="section" style="padding-top: 2rem; padding-bottom: 2rem;">
@@ -784,8 +787,8 @@
             </div>
             <div class="benefit-card">
                 <span class="material-icons">forum</span>
-                <h3>Plain English</h3>
-                <p>Measurely explains graphs using words you'd actually use in real life.</p>
+                <h3>Clear explanations</h3>
+                <p>Measurely explains what matters, why it matters, and what to do next.</p>
             </div>
             <div class="benefit-card">
                 <span class="material-icons">savings</span>
@@ -796,62 +799,99 @@
     </section>
 
 
-        <!-- HOW IT WORKS -->
-    <section class="how-section section" id="how-it-works" 
+    <!-- HOW IT WORKS -->
+    <section class="how-section section" id="how-it-works"
     style="padding-top:3rem; padding-bottom:3rem; text-align:center;">
 
         <h2 style="margin-bottom:1rem;">How It Works</h2>
         <div class="section-divider"></div>
 
-        <ol style="
+        <div class="glass-card" style="
+            max-width: 44rem;
             margin: 2rem auto 0;
-            padding: 0;
-            max-width: 40rem;
-            text-align:center;
-            line-height: 2;
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            list-style-position: inside;
+            padding: 2.5rem 2rem;
         ">
-            <li><strong>Rent</strong> the kit (££££ + refundable ££££ deposit)</li>
-            <li><strong>Plug in</strong> the mic → go to <code>measurely.local:5000</code></li>
-            <li><strong>Measure</strong> your room. Measurely reads the sweep.</li>
-            <li><strong>Fix</strong> your room with 3 super-simple nudges.</li>
-            <li><strong>Return</strong> using the prepaid label.</li>
-        </ol>
 
-        <div style="margin-top:2.5rem;">
-            <a href="beta.html" class="btn btn-primary">
-                Join the Waitlist
-            </a>
-        </div>
+            <ol style="
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                line-height: 2;
+                font-size: 1.1rem;
+                color: var(--text-secondary);
+                list-style-position: inside;
+            ">
+                <li>
+                    <strong>Plug it in.</strong><br>
+                    Connect the mic and power up the Measurely box.
+                </li>
+
+                <li>
+                    <strong>Connect.</strong><br>
+                    Join Measurely’s Wi-Fi and open 
+                    <code>measurely.local:5000</code> on any phone, tablet, or laptop.
+                </li>
+
+                <li>
+                    <strong>Measure.</strong><br>
+                    Run a short sweep while Measurely listens to your room.
+                </li>
+
+                <li>
+                    <strong>Understand.</strong><br>
+                    Measurely turns what it hears into clear, human explanations.
+                </li>
+
+                <li>
+                    <strong>Fix.</strong><br>
+                    Get three simple, practical nudges — things you can do immediately.
+                </li>
+
+                <li>
+                    <strong>Send it back.</strong><br>
+                    Rental includes prepaid return postage and a refundable deposit.
+                </li>
+            </ol>
+
+            <p style="
+                margin-top: 1.5rem;
+                font-size: 0.95rem;
+                color: var(--text-muted);
+            ">
+                Most people are measuring their room within 10 minutes.
+            </p>
+
+            <div style="margin-top:2rem;">
+                <a href="beta.html" class="btn btn-primary">
+                    Join the Waitlist
+                </a>
+            </div>
+
         </div>
 
     </section>
 
+
     <!-- ROOM-SETUP GUIDE -->
     <section class="room-guide-section">
         <div class="room-guide-content">
+
             <h2>Your Room-Setup Co-Pilot</h2>
-    
+
             <p>
-                Measurely isn't just another app or guesswork tool. It's a compact analysis box that listens to your room, runs a calibrated sweep, and shows you exactly where your sound might need a tweak.
+                Measurely listens to your room, runs a calibrated sweep, and tells you — calmly and clearly — what’s actually going on.
             </p>
-    
+
             <p>
-                Inside Measurely, you'll find a calm, knowledgeable guide that keeps things simple. No jargon, no judgement—just clear explanations and practical steps anyone can follow.
+                There’s no jargon and no judgement. Just plain-English explanations and practical steps you can take straight away.
             </p>
-    
+
+            <h3>What That Means in Practice</h3>
+
             <p>
-                Think of it as a bit of old-school tech with a modern brain, turning technical noise into straightforward advice you can actually use.
+                Instead of throwing graphs and numbers at you, Measurely translates real acoustic data into simple, human advice.
             </p>
-    
-            <h3>How It Helps You</h3>
-    
-            <p>
-                Measurely captures real acoustic measurements, interprets them, and tells you exactly what to fix. There's no complexity—just a reassuring, straightforward voice that knows what's going on.
-            </p>
-    
+
             <div class="code-comparison">
                 <div class="code-box code-box-red">
                     <strong>RAW DATA:</strong>
@@ -860,14 +900,21 @@
                     • Early reflection at 4.3ms<br>
                     • SBIR dip at 95Hz
                 </div>
-    
+
                 <div class="arrow">→</div>
-    
+
                 <div class="code-box code-box-green">
                     <strong>GUIDE SAYS:</strong>
-                    <span class="typewriter-text">"Your left speaker is too close. Pull it in 15cm—boominess sorted."</span>
+                    <span class="typewriter-text">
+                        "Your left speaker is too close. Pull it in 15cm — boominess sorted."
+                    </span>
                 </div>
             </div>
+
+            <p>
+                It’s not trying to impress you. It’s just trying to help your room sound better.
+            </p>
+
         </div>
     </section>
 
@@ -935,25 +982,40 @@
         </div>
     </section>
 
-
     <!-- REVIEWS -->
     <section class="reviews-section section">
         <h2>Absolutely Not Verified Reviews</h2>
+
+        <p style="max-width: 42rem; margin: 1rem auto 2rem; color: var(--text-secondary);">
+            Real situations, familiar outcomes. Names withheld to protect the mildly obsessed.
+        </p>
+
         <div class="testimonials">
             <div class="testimonial">
-                <p>"Thought my speakers were knackered. Turns out it was the carpet. Measaurely sorted it between pints."</p>
+                <p>
+                    "Thought my speakers were knackered. Turns out it was the carpet. Measurely sorted it between pints."
+                </p>
                 <span>Bloke Down the Pub</span>
             </div>
+
             <div class="testimonial">
-                <p>"Didn't understand a single graph. Measaurely told me to move the sofa. Worked."</p>
-                <span>Woman on the Bus</span>
+                <p>
+                    "Didn’t bother with the graphs. Measurely told me to move the sofa. It worked."
+                </p>
+                <span>Someone Who Trusted the Advice</span>
             </div>
+
             <div class="testimonial">
-                <p>"Nearly bought a £900 sub. Measaurely said 'move couch.' He was right."</p>
-                <span>Guy Walking His Dog</span>
+                <p>
+                    "Nearly bought a £900 sub. Measurely said ‘move the couch’. It was right."
+                </p>
+                <span>Man Resisting an Upgrade</span>
             </div>
+
             <div class="testimonial">
-                <p>"Spent weeks researching diffusers. Measaurely said 'buy a rug.' £18. Sorted."</p>
+                <p>
+                    "Spent weeks researching diffusers. Measurely said ‘buy a rug’. £18. Done."
+                </p>
                 <span>Man Who Googles Too Much</span>
             </div>
         </div>
