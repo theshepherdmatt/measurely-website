@@ -198,69 +198,68 @@ header, section, footer { position: relative; z-index: 1; }
 }
 
 /* ============================================================
-   HOW IT WORKS – CLEAN, CENTERED, SELF-CONTAINED
+   HOW IT WORKS – FLOATING STEPS (NO CARDS)
    ============================================================ */
 
 .how-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2.75rem;
+    gap: 3rem;
 
-    /* hard-centre the whole block */
     max-width: 1100px;
     margin: 3.5rem auto 0;
 }
 
-/* Individual card */
+/* Step wrapper (no card visuals) */
 .how-card {
-    background: var(--glass);
-    border: 1px solid var(--border-soft);
-    border-radius: 1.25rem;
-    box-shadow: var(--shadow-md);
-
-    padding: 1.5rem 1.25rem 1.75rem;
     text-align: center;
 
-    /* prevent internal drift */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Image sizing consistency */
+/* Illustration */
 .how-card img {
     width: 100%;
     max-width: 220px;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
+
+    /* optional subtle lift */
+    filter: drop-shadow(0 12px 30px rgba(0,0,0,0.25));
 }
 
-/* Text lock-in */
+/* Heading */
 .how-card h3 {
     font-size: 1.05rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
+/* Copy */
 .how-card p {
     font-size: 0.95rem;
     line-height: 1.55;
     color: var(--text-secondary);
     max-width: 220px;
-    margin: 0;
+    margin: 0 auto;
 }
 
-/* Responsive rules — explicit, no auto-fit magic */
+/* Responsive */
 @media (max-width: 1100px) {
     .how-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 3.5rem;
     }
 }
 
 @media (max-width: 600px) {
     .how-grid {
         grid-template-columns: 1fr;
+        gap: 3rem;
     }
 }
+
 
 
 /* ============================================================
@@ -363,16 +362,38 @@ footer p { font-size:.85rem; color:var(--text-muted); }
 <section id="how" class="section section--centered">
     <h2>How it works</h2>
     <div class="divider"></div>
+
     <div class="how-grid">
-        <div class="how-card"><img src="info1.svg"><h3>Delivered</h3><p>Everything you need arrives ready.</p></div>
-        <div class="how-card"><img src="info2.svg"><h3>Set up</h3><p>Plug in and follow steps.</p></div>
-        <div class="how-card"><img src="info3.svg"><h3>Measure</h3><p>A short sweep reveals the truth.</p></div>
-        <div class="how-card"><img src="info4.svg"><h3>Return</h3><p>Prepaid, no hassle.</p></div>
+        <div class="how-card">
+            <img src="info1.svg" alt="Delivered">
+            <h3>Delivered</h3>
+            <p>Everything you need arrives ready.</p>
+        </div>
+
+        <div class="how-card">
+            <img src="info2.svg" alt="Set up">
+            <h3>Set up</h3>
+            <p>Plug in and follow steps.</p>
+        </div>
+
+        <div class="how-card">
+            <img src="info3.svg" alt="Measure">
+            <h3>Measure</h3>
+            <p>A short sweep reveals the truth.</p>
+        </div>
+
+        <div class="how-card">
+            <img src="info4.svg" alt="Return">
+            <h3>Return</h3>
+            <p>Prepaid, no hassle.</p>
+        </div>
     </div>
+
     <div style="margin-top:4rem">
         <a href="beta.html" class="btn btn-primary">Join the waitlist</a>
     </div>
 </section>
+
 
 <section class="section setup">
     <h2>Simple, no-internet setup</h2>
