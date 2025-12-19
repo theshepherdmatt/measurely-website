@@ -283,6 +283,26 @@ header, section, footer { position: relative; z-index: 1; }
 }
 .setup ol { text-align: left; max-width: 24rem; }
 
+@media (max-width: 600px) {
+    .setup-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .setup-grid ol {
+        list-style-position: inside;
+        padding-left: 0;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .setup-grid li {
+        margin-bottom: 0.75rem;
+    }
+}
+
+
 /* ============================================================
    REVIEWS
    ============================================================ */
